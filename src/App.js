@@ -4,7 +4,8 @@ import NavBar from "./components/General/NavBar";
 import RenderDescription from "./components/Description/RenderDescription";
 import RenderProjects from "./components/Projects/RenderProjects";
 import RenderSkills from "./components/Skills/RenderSkills";
-import PlaceholderLoading from 'react-placeholder-loading'
+import BackToTop from "./components/General/scroll_top";
+import { Scrollbars } from 'react-custom-scrollbars';
 
 function App() {
   const [description, setDescription] = useState([]);
@@ -21,17 +22,18 @@ function App() {
   return (
     <>
       <NavBar />
-      <div >
-        <div id="home" className="content">
-          <RenderDescription data={description} descrIsLoading={descrIsLoading} />
+      <BackToTop />
+        <div>
+          <div id="home" className="content">
+            <RenderDescription data={description} descrIsLoading={descrIsLoading} />
+          </div>
+          <div id="projects" className="content">
+            <RenderProjects data={projects} projectsIsLoading={projectsIsLoading} />
+          </div>
+          <div id="skills" className="content">
+            <RenderSkills data={skills} skillsIsLoading={skillsIsLoading} />
+          </div>
         </div>
-        <div id="projects" className="content">
-          <RenderProjects data={projects} projectsIsLoading={projectsIsLoading} />
-        </div>
-        <div id="skills" className="content">
-          <RenderSkills data={skills} skillsIsLoading={skillsIsLoading} />
-        </div>
-      </div>
     </>
   );
 }

@@ -9,7 +9,7 @@ function NavBar() {
                 to='home' 
                 className='navbar-brand m-3' 
                 spy={true} smooth={true} 
-                offset={-200} 
+                offset={-255}
                 duration={50}>About me</Link>
                 <Link to='projects' className='navbar-brand m-3' spy={true} smooth={true} offset={-115} duration={50}>Projects</Link>
                 <Link to='skills' className='navbar-brand m-3' spy={true} smooth={true} offset={-105} duration={50}>Skills</Link>
