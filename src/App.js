@@ -5,7 +5,6 @@ import RenderDescription from "./components/Description/RenderDescription";
 import RenderProjects from "./components/Projects/RenderProjects";
 import RenderSkills from "./components/Skills/RenderSkills";
 import BackToTop from "./components/General/scroll_top";
-import Player from "./components/General/BackgroundAudio";
 
 function App() {
   const [description, setDescription] = useState([]);
@@ -23,7 +22,6 @@ function App() {
     <>
       <NavBar />
       <BackToTop />
-      <Player />
         <div>
           <div id="home" className="content">
             <RenderDescription data={description} descrIsLoading={descrIsLoading} />
