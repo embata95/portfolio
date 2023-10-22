@@ -1,7 +1,6 @@
 {
   "hosting": {
-    "site" : "rashev-portfolio",
-    "public": "build",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
