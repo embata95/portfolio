@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "target": "rashev-portfolio",
     "public": "public",
     "ignore": [
       "firebase.json",
