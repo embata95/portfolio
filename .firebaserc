@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "react-cv-a8dad"
-  }
+  },
+  "targets": {
+    "react-cv-a8dad": {
+      "hosting": {
+        "rashev-portfolio": [
+          "rashev-portfolio"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
